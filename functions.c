@@ -53,7 +53,7 @@ int print_a_integer(va_list args)
 	m = n;
 	if (m < 0)
 	{
-		_write('-');
+		_putchar('-');
 		m = m * -1;
 		n = m;
 		count += 1;
