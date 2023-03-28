@@ -27,7 +27,7 @@ int print_string(va_list args)
 	str = va_arg(args, char*);
 	if (str == NULL)
 	{
-		return (0);
+		return (6);
 	}
 	i = 0;
 
