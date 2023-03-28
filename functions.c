@@ -1,21 +1,22 @@
 #include "main.h"
 
 
-/*
- *print_char - print a char :)
- *@args: arguments list
- *return: 1 (success), -1 (failed)
+/**
+ * print_char - print a char :)
+ * @args: arguments list
+ * Return: 1 (success), -1 (failed)
  */
 
 int print_char(va_list args)
 {
 
-	return _putchar(va_arg(args, int));
+	return (_putchar(va_arg(args, int)));
 }
 
-/* print_string: prints a string 
- *@args: arguments list
- *return: string length
+/**
+ * print_string - prints a string
+ * @args: arguments list
+ * Return: string length
  */
 
 int print_string(va_list args)
@@ -24,19 +25,16 @@ int print_string(va_list args)
 	int i;
 
 	str = va_arg(args, char*);
-	if(str == NULL)
+	if (str == NULL)
 	{
 		return (0);
 	}
 	i = 0;
 
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		_putchar(str[i++]);
 	}
 
 	return (i);
 }
-
-
-
