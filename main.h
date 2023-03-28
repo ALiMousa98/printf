@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
-#include "_putchar.c"
 
 /**
   * struct specifiers - Struct specifiers
@@ -27,5 +26,7 @@ int _print_invalid_spec(char prev_format, char format, int count);
 int _print_a_integer(va_list args);
 void _recursion_integer(int a);
 int _validate_char(char _type);
+int _print_int_binary(va_list args);
+void _recursion_int_binary(int a);
 
 #endif

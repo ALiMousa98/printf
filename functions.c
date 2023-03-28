@@ -10,7 +10,7 @@
 int print_char(va_list args)
 {
 
-	return _putchar(va_arg(args, char));
+	return _putchar(va_arg(args, int));
 }
 
 /* print_string: prints a string 
@@ -23,7 +23,7 @@ int print_string(va_list args)
 	char *str;
 	int i;
 
-	str = va_args(args, char*)
+	str = va_arg(args, char*);
 	if(str == NULL)
 	{
 		return (0);
